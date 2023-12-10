@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem; 
+  color: #fff; 
+  margin-top: 6rem
+}
+
+
+.nav-link{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    animation: slide-top 0.7s forwards;
+}
+
+
+.header h2{
+font-size: 2rem;
+font-weight: bold;
+color: #fff;
+letter-spacing: 3px;
+font-family: sans-serif;
+font-size: 20px;
+animation: slide-top 0.7s forwards;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header span{
+    color: rgb(97, 210, 230);
+}
+
+
+.nav-link ul{
+display: flex;
+gap: 3rem;
+align-items: center;
+}
+
+li{
+list-style: none;
+text-transform: uppercase;
+font-weight: 500;
+font-size: 18px;
+letter-spacing: 3px;
+transition: 0.6s;
+}
+
+li a{
+text-decoration: none;
+color: rgb(97, 210, 230);
+border-radius: 1rem;
+padding: 5px 1rem;
+font-family: sans-serif;
+font-size: 18px;
+}
+
+
+li a:hover{
+background: linear-gradient(#61d2e6, #2713c4);
+color: #fff;
+
+}
+
+.banner{
+height: 100%;
+width: 100%;
+position: absolute;
+background-size: cover;
+top: 0;
+z-index: -1;
+}
+
+.section{
+    height: 100%;
+    width: 100%;
+    padding-top: 8.5rem;
+    display: flex;
+}
+
+.section .line{
+    width: 3px;
+    background-color: aqua;
+    height: 20em;
+    bottom: -3rem;
+    position: relative;
+    right: -6rem;
+}
+
+.image-about{
+padding-left: 10rem;
+}
+.img {
+    height: 25rem;
+    width:  20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
+    animation: scale-in-center 0.7s both;
+}
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.image-about {
+    height: 25rem;
+    width: 20rem;
+    background: #000216;
+    background: linear-gradient(#0b147a, #000216);
+    border-radius: 68px;
+    box-shadow:  5px 5px 10px #000216,
+             -5px -5px 10px #0b147a;
+    padding-left: 10rem;
+    
+}
+.image-about img  {
+    height: 24rem;
+    width: 19rem;
+    border-radius: 68px;
+    max-width: 350px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    
+}
+img {
+    left: 168px;
+    top: 8px;
+    
+}
+
+
+
+.info{
+padding-left: 12rem;
+animation: slide-in-elliptic-top-fwd 0.7s forwards;
+
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+
+
+.info p{
+    color: #fff;
+    border: 2.5px  #fff;
+    border-radius: 1rem;
+    width: 30rem;
+    height: 21rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(#0b147a, #000216);
+    box-shadow:  5px 5px 10px #000216,
+             -5px -5px 10px #0b147a;
+}
+
+button {
+    top: -4.6rem;
+    right: -63.1rem;
+outline: none;
+cursor: pointer;
+border: none;
+padding: 0.9rem 2rem;
+margin: 0;
+font-family: inherit;
+font-size: inherit;
+position: relative;
+display: inline-block;
+letter-spacing: 0.05rem;
+font-weight: 800;
+font-size: 17px;
+border-radius: 500px;
+overflow: hidden;
+background: #2713c4;
+color: rgb(97, 210, 230);
+border: 2px solid rgb(97, 210, 230);
+font-family: Arial, Helvetica, sans-serif;
+box-shadow: 0px 5px 15px #2713c4;
+animation: slide-in-elliptic-top-fwd 0.7s forwards;
+}
+
+button span {
+position: relative;
+z-index: 10;
+transition: color 0.4s;
+text-transform: uppercase;
+letter-spacing: 3px;
+font-weight: 600;
+}
+
+button:hover span {
+color: rgb(97, 210, 230);
+}
+
+button::before,
+button::after {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 0;
+}
+
+button::before {
+content: "";
+background: #000;
+width: 120%;
+left: -10%;
+transform: skew(30deg);
+transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+transform: translate3d(100%, 0, 0);
+}

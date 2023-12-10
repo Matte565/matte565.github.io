@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-link{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    animation: slide-top 0.7s forwards;
+}
+
+
+.header h2{
+font-size: 2rem;
+font-weight: bold;
+color: #fff;
+letter-spacing: 3px;
+font-family: sans-serif;
+font-size: 20px;
+animation: slide-top 0.7s forwards;
+}
+@keyframes slide-top {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.header span{
+    color: rgb(97, 210, 230);
+}
+
+
+.nav-link ul{
+display: flex;
+gap: 3rem;
+align-items: center;
+}
+
+li{
+list-style: none;
+text-transform: uppercase;
+font-weight: 500;
+font-size: 18px;
+letter-spacing: 3px;
+transition: 0.6s;
+}
+
+li a{
+text-decoration: none;
+color: rgb(97, 210, 230);
+border-radius: 1rem;
+padding: 5px 1rem;
+font-family: sans-serif;
+font-size: 18px;
+}
+
+
+li a:hover{
+    background: linear-gradient(#61d2e6, #2713c4);
+color: #fff;
+
+}
+
+.form-container {
+    width: 400px;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 0px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 22px 0px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+
+body {
+        background-color: #212121;
+    }
+
+    .main1 {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+      top: 40%;
+      left: 30%;
+      position: absolute;
+    }
+    
+    .up {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5em;
+    }
+    
+    .down {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5em;
+    }
+    
+    .card1 {
+      width: 90px;
+      height: 90px;
+      outline: none;
+      border: none;
+      background: black;
+      border-radius: 90px 5px 5px 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .2s ease-in-out;
+    }
+    
+    .instagram {
+      margin-top: 1.5em;
+      margin-left: 1.2em;
+      fill: #cc39a4;
+    }
+    
+    .card2 {
+      width: 90px;
+      height: 90px;
+      outline: none;
+      border: none;
+      background: black;
+      border-radius: 5px 90px 5px 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .2s ease-in-out;
+    }
+    
+    .facebook {
+      margin-top: 1.5em;
+      margin-left: -.9em;
+      fill: #03A9F4;
+    }
+    
+    .card3 {
+      width: 90px;
+      height: 90px;
+      outline: none;
+      border: none;
+      background: black;
+      border-radius: 5px 5px 5px 90px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .2s ease-in-out;
+    }
+    
+    .whatsapp {
+      margin-top: -.6em;
+      margin-left: 1.2em;
+      fill: #00ff00;
+    }
+    
+    .card4 {
+      width: 90px;
+      height: 90px;
+      outline: none;
+      border: none;
+      background: black;
+      border-radius: 5px 5px 90px 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .2s ease-in-out;
+    }
+    
+    .gmail {
+      margin-top: -.9em;
+      margin-left: -1.2em;
+      fill: #f14336;
+    }
+    
+    .card1:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: #cc39a4;
+    }
+    
+    .card1:hover .instagram {
+      fill: white;
+    }
+    
+    .card2:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: #1877f2;
+    }
+    
+    .card2:hover .facebook {
+      fill: white;
+    }
+    
+    .card3:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: #00ff00;
+    }
+    
+    .card3:hover .whatsapp {
+      fill: white;
+    }
+    
+    .card4:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: #FF0004;
+    }
+    
+    .card4:hover .gmail {
+      fill: white;
+    }
